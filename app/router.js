@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('game', {path: '/'});
+  this.route('highscores');
 });
 
 export default Router;
