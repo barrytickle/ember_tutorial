@@ -1,0 +1,22 @@
+{{#if playing}}
+  {{#if correct}}
+    <div class="text-center">Yes! It only took me {{guesses}}, guesses.</div>
+    <div class="text-center">Do you want to <button {{action 'start'}}>play again!</button></div>
+    <div class="text-center highscore"> {{input value=player_name placeholder ='Your name'}}<button {{action 'save-highscore'}}>Save Highscore!</button></div>
+  {{else}}
+  <div class="text-center">Is it {{guessValue}}?</div>
+  <div class="text-center">
+    <button {{action 'lower'}}>Lower</button>
+    <button {{action 'correct'}}>Correct</button>
+    <button {{action 'higher'}}>Higher</button>
+    <button {{action 'start'}}>Restart</button>
+  </div>
+
+  <div class="text-center">Number of guesses: {{guesses}}.</div>
+  {{/if}}
+
+{{else}}
+  <div class="text-center">
+    Think of a number between 1 and 100 and press <button {{action 'start'}}>Start!</button>
+  </div>
+{{/if}}
