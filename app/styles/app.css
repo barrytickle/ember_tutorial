@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+
+body{
+  font-family:'Quicksand', monospace;
+  font-size:12pt;
+  font-weight:500;
+}
+
+footer{
+  display:flex;
+  justify-content: space-between;
+}
+
+.text-center{
+  text-align: center;
+}
+
+a{
+  color:#fff;
+}
+
+/* Fixed layout for the application */
+#app{
+  max-width:400px;
+  background:#000;
+  border:2px solid #ff1493;
+}
+
+/* Header styling */
+header h1{
+  background:#ff1493;
+  color:#fff;
+  margin:0;
+  padding:0.5rem;
+  text-align: center;
+}
+
+hedaer h1 a{
+  text-decoration: none;
+}
+
+/* Main game area styling */
+article{
+  height:400px;
+  overflow:auto;
+  color:#fff;
+  padding:0.5rem;
+  position: relative;
+}
+
+article h2{
+  margin:0;
+}
+
+footer{
+  background:#ff1493;
+  color:#fff;
+  font-size:0.9rem;
+  padding:0.2rem 0.3rem;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  background:#ff1493;
+  color:#fff;
+  margin:10px 0;
+  font-weight:500;
+  border-radius: 5px;
+}
